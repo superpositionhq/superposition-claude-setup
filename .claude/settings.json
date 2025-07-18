@@ -1,0 +1,45 @@
+{
+  "permissions": {
+    "allow": [
+      "Fetch",
+      "WebFetch",
+      "WebSearch",
+      "Bash(curl:*)",
+      "Bash(npm run test)",
+      "Bash(npm run test:*)",
+      "Bash(npm test:*)",
+      "Bash(npm run lint)",
+      "Bash(npm run typecheck:*)",
+      "Bash(/dev/null)",
+      "Bash(psql:*)",
+      "Bash(tsx scripts/debug-classification.ts:*)",
+      "Bash(npx tsx:*)",
+      "Bash(npx tsc:*)",
+      "Bash(touch:*)",
+      "Bash(grep:*)",
+      "mcp__ide__getDiagnostics",
+      "Bash(find:*)",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(touch:*)",
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(cp:*)",
+      "Bash(ls:*)",
+      "Bash(git commit:*)",
+      "Bash(git add:*)",
+      "Bash(npm install:*)",
+      "Bash(gh pr create:*)"
+    ],
+    "deny": ["Bash(npm run db:migrate*)", "Bash(npm run dev*)"],
+    "filesystem": {
+      "read": ["**/*"],
+      "write": ["**/*"],
+      "delete": ["**/*"]
+    },
+    "network": {
+      "allowed_domains": ["*"]
+    }
+  },
+  "includeCoAuthoredBy": false
+}
