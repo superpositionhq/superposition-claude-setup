@@ -52,7 +52,6 @@ Claude will create a GitHub PR with proper description and labels.
 
 - Use git worktree to run multiple Claude instances in parallel
 - Start with specs, not code - use `/create-doc` first
-- Chain commands for efficiency: "create-doc then commit then pr"
 
 ## Requirements
 
